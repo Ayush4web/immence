@@ -2,7 +2,7 @@ const express = require('express')
 const app = express();
 
 const productRoute = require('./routes/productRoutes')
-const connectDB = require('./db/connect')
+const connectDB = require('./Db/connect')
 
 app.get('/', (req,res) => {
   res.json({
