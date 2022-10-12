@@ -12,7 +12,7 @@ app.use('/', (req,res) => {
 })
 app.use('/api',productRoute)
 
-const port = 5000
+const port = process.env.port || 5000
 MONGO_URI = 'mongodb+srv://Ayush:OiYxB6qVs5nfaJRu@cluster0.8jw7piq.mongodb.net/'
 
 const start = async () => {
