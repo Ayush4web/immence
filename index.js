@@ -4,7 +4,7 @@ const app = express();
 const productRoute = require('./routes/productRoutes')
 const connectDB = require('./db/connect')
 
-app.use('/', (req,res) => {
+app.get('/', (req,res) => {
   res.json({
     "msg": 'Welcome to the Assignment part',
     "endpoint":"Use /api/products to see all products"
