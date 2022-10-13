@@ -3,6 +3,10 @@ const app = express();
 
 const productRoute = require('./routes/productRoutes')
 const connectDB = require('./Db/connect')
+const cors = require('cors')
+
+
+app.use(cors())
 
 app.get('/', (req,res) => {
   res.json({
